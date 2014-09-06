@@ -23,7 +23,7 @@ coreos:
           [Service]
           Type=oneshot
           StandardOutput=journal+console
-          ExecStart=/usr/share/oem/bin/exoscale-setup-network
+          ExecStart=/usr/share/oem/bin/coreos-setup-network
       - name: exoscale-cloudinit.service
         command: restart
         runtime: yes
